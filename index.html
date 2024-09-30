@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เสียงเรียกเข้า</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-image: url('images/ring1.jpg');
+            background-repeat: no-repeat;
+            background-position: center; /* แก้ไขจาก background-attachment */
+            background-attachment: fixed; /* ถ้าต้องการให้ภาพอยู่กับที่เวลาเลื่อนหน้า */
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,6 +54,7 @@
     <audio id="call-sound" src="" preload="auto"></audio>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
