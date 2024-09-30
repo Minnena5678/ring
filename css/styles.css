@@ -1,3 +1,4 @@
+
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -7,17 +8,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(253, 255, 124);
-
     overflow: hidden;
 }
 
 
 
 .selection h1 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+    
+        text-align: center;
+        color: #010911;
+        margin: 20px;
+        font-size: 6vw; /* ใช้หน่วยที่ปรับตามขนาดหน้าจอ */
+    
 }
 
 .selection button {
@@ -43,23 +45,19 @@ body {
 }
 
 .selection button:nth-child(2) {
-    background-color: #00c300;
-    /* LINE color */
+    background-color: #00c300; /* LINE color */
 }
 
 .selection button:nth-child(3) {
-    background-color: #e1306c;
-    /* Instagram color */
+    background-color: #e1306c; /* Instagram color */
 }
 
 .selection button:nth-child(4) {
-    background-color: #0078ff;
-    /* Messenger color */
+    background-color: #0078ff; /* Messenger color */
 }
 
 .selection button:nth-child(5) {
-    background-color: #000000;
-    /* iOS color */
+    background-color: #000000; /* iOS color */
 }
 
 
@@ -83,9 +81,8 @@ body {
 }
 
 .call-content {
-
-    position: relative;
-    /* ปรับให้มีตำแหน่งสัมพันธ์กับการวางตำแหน่งของลูก */
+  
+    position: relative; /* ปรับให้มีตำแหน่งสัมพันธ์กับการวางตำแหน่งของลูก */
     text-align: center;
     background: #000;
     border-radius: 15px;
@@ -93,16 +90,15 @@ body {
     width: 100%;
     max-width: 400px;
     animation: slideIn 0.5s ease-out;
-    height: 100%;
-    /* ใช้ให้เต็มความสูง */
+    height: 100%; /* ใช้ให้เต็มความสูง */
 }
 
 #profile-pic {
-    top: 20px;
+    top:20px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-
+    
     margin: 40px auto 10px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -115,42 +111,33 @@ h2#caller-name {
 .call-buttons {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
-    /* เปลี่ยนจาก space-between เป็น space-around เพื่อให้มีพื้นที่รอบปุ่ม */
+    justify-content: space-around; /* เปลี่ยนจาก space-between เป็น space-around เพื่อให้มีพื้นที่รอบปุ่ม */
     width: 100%;
     max-width: 400px;
     position: absolute;
-    bottom: 20px;
+    bottom:20px;
 }
 
 .call-buttons button {
     flex: 1;
     border: none;
-    background: transparent;
-    /* ปรับพื้นหลังปุ่มเป็นโปร่งใส */
+    background: transparent; /* ปรับพื้นหลังปุ่มเป็นโปร่งใส */
     display: flex;
-    flex-direction: column;
-    /* แสดงภาพและข้อความในแนวตั้ง */
-    align-items: center;
-    /* จัดแนวกึ่งกลางในแนวตั้ง */
+    flex-direction: column; /* แสดงภาพและข้อความในแนวตั้ง */
+    align-items: center; /* จัดแนวกึ่งกลางในแนวตั้ง */
     padding: 10px;
     cursor: pointer;
 }
 
 .call-icon {
-    width: 65px;
-    /* ปรับขนาดของไอคอน */
-    height: 65px;
-    /* ปรับขนาดของไอคอน */
+    width: 65px; /* ปรับขนาดของไอคอน */
+    height: 65px; /* ปรับขนาดของไอคอน */
 }
 
 .call-buttons span {
-    margin-top: 5px;
-    /* ระยะห่างระหว่างภาพและข้อความ */
-    font-size: 16px;
-    /* ขนาดฟอนต์ */
-    color: #fff;
-    /* สีข้อความ */
+    margin-top: 5px; /* ระยะห่างระหว่างภาพและข้อความ */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    color: #fff; /* สีข้อความ */
 }
 
 
@@ -158,14 +145,12 @@ h2#caller-name {
     background-color: #ff4d4d;
 }
 
-.send-message,
-.video-call {
+.send-message, .video-call {
     background-color: #0dd235;
 }
 
 .line-call .call-content {
-    background: #1fc51f;
-    /* LINE */
+    background: #1fc51f; /* LINE */
 }
 
 .instagram-call .call-content {
@@ -174,18 +159,15 @@ h2#caller-name {
 }
 
 .messenger-call .call-content {
-    background: #0078ff;
-    /* Messenger */
+    background: #0078ff; /* Messenger */
 }
 
 .ios-call .call-content {
-    background: #000;
-    /* iOS */
+    background: #000; /* iOS */
 }
 
 .android-call .call-content {
-    background: #a4c639;
-    /* Android */
+    background: #a4c639; /* Android */
 }
 
 /* Animation */
@@ -193,7 +175,6 @@ h2#caller-name {
     from {
         transform: translateY(-100%);
     }
-
     to {
         transform: translateY(0);
     }
